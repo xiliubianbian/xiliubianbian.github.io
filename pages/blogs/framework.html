@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前端项目框架搭建初探 | 吾积之谈</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/logo.jpg">
+    <meta name="description" content="细刘变变的博客">
+    
+    <link rel="preload" href="/assets/css/0.styles.b23bcaa9.css" as="style"><link rel="preload" href="/assets/js/app.2be9e6a6.js" as="script"><link rel="preload" href="/assets/js/2.ff527315.js" as="script"><link rel="preload" href="/assets/js/13.eb46e6c7.js" as="script"><link rel="prefetch" href="/assets/js/10.392e9dbc.js"><link rel="prefetch" href="/assets/js/11.6b663350.js"><link rel="prefetch" href="/assets/js/12.8eee23f5.js"><link rel="prefetch" href="/assets/js/14.bbb439f5.js"><link rel="prefetch" href="/assets/js/15.debdc7a0.js"><link rel="prefetch" href="/assets/js/16.c6c90487.js"><link rel="prefetch" href="/assets/js/17.8c3ae970.js"><link rel="prefetch" href="/assets/js/18.d063899f.js"><link rel="prefetch" href="/assets/js/19.3313f1ee.js"><link rel="prefetch" href="/assets/js/20.574eb8ad.js"><link rel="prefetch" href="/assets/js/21.1fbd01de.js"><link rel="prefetch" href="/assets/js/22.390ed57a.js"><link rel="prefetch" href="/assets/js/23.6619abe3.js"><link rel="prefetch" href="/assets/js/24.b23fa34f.js"><link rel="prefetch" href="/assets/js/3.9f4e1b56.js"><link rel="prefetch" href="/assets/js/4.5741b95c.js"><link rel="prefetch" href="/assets/js/5.4e4b35f6.js"><link rel="prefetch" href="/assets/js/6.9b1e3a5c.js"><link rel="prefetch" href="/assets/js/7.9dfd2a4f.js"><link rel="prefetch" href="/assets/js/8.19e55e67.js"><link rel="prefetch" href="/assets/js/9.7faff3e9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b23bcaa9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.jpg" alt="吾积之谈" class="logo"> <span class="site-name can-hide">吾积之谈</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/tools/vuepress.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+  琐碎
+</a></li></ul></div></div><div class="nav-item"><a href="/pages/folder1/test3.html" class="nav-link">
+  功能演示
+</a></div><div class="nav-item"><a href="https://github.com/xiliubianbian?tab=repositories" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/tools/vuepress.html" class="nav-link">
+  文章
+</a></li><li class="dropdown-item"><!----> <a href="/pages/folder2/test4.html" class="nav-link">
+  琐碎
+</a></li></ul></div></div><div class="nav-item"><a href="/pages/folder1/test3.html" class="nav-link">
+  功能演示
+</a></div><div class="nav-item"><a href="https://github.com/xiliubianbian?tab=repositories" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>读书笔记</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/front-books/javascript.html" class="sidebar-link">JavaScript基础</a></li><li><a href="/pages/front-books/design-patterns.html" class="sidebar-link">JS设计模式</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前端工具</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/tools/vuepress.html" class="sidebar-link">VuePress</a></li><li><a href="/pages/tools/source-tree.html" class="sidebar-link">SourceTree</a></li><li><a href="/pages/tools/fiddler.html" class="sidebar-link">Fiddler</a></li><li><a href="/pages/tools/github.html" class="sidebar-link">GitHub</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>命令行</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/command-line/node.html" class="sidebar-link">NodeJS</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>实践</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/blogs/nodejs.html" class="sidebar-link">NodeJS入门</a></li><li><a href="/pages/blogs/framework.html" aria-current="page" class="active sidebar-link">前端项目框架</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/blogs/framework.html#前端项目框架搭建初探" class="sidebar-link">前端项目框架搭建初探</a></li></ul></li><li><a href="/pages/blogs/modular.html" class="sidebar-link">前端模块化</a></li><li><a href="/pages/blogs/canvas.html" class="sidebar-link">Canvas</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="前端项目框架搭建初探"><a href="#前端项目框架搭建初探" class="header-anchor">#</a> 前端项目框架搭建初探</h2> <h4 id="基于什么场景或实现什么需求"><a href="#基于什么场景或实现什么需求" class="header-anchor">#</a> 基于什么场景或实现什么需求</h4> <h4 id="项目初始化"><a href="#项目初始化" class="header-anchor">#</a> 项目初始化</h4> <h4 id="项目结构"><a href="#项目结构" class="header-anchor">#</a> 项目结构</h4> <h4 id="webpack配置"><a href="#webpack配置" class="header-anchor">#</a> webpack配置</h4> <h4 id="有什么优缺点"><a href="#有什么优缺点" class="header-anchor">#</a> 有什么优缺点</h4> <h4 id="结合实际情况对项目结构调整的思考及试探"><a href="#结合实际情况对项目结构调整的思考及试探" class="header-anchor">#</a> 结合实际情况对项目结构调整的思考及试探</h4></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">3/30/2020, 9:47:45 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/pages/blogs/nodejs.html" class="prev">
+        NodeJS入门
+      </a></span> <span class="next"><a href="/pages/blogs/modular.html">
+        前端模块化
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.2be9e6a6.js" defer></script><script src="/assets/js/2.ff527315.js" defer></script><script src="/assets/js/13.eb46e6c7.js" defer></script>
+  </body>
+</html>
